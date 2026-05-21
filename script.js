@@ -68,5 +68,4 @@ btn.addEventListener("click", (event) => {
         console.log("please Add any image")
     }
     
-    localStorage.clear()
 })
