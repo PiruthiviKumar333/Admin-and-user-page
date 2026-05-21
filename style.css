@@ -221,3 +221,21 @@ p {
 .container #signup_toggle:checked+.form {
   transform: rotateY(-180deg);
 }
+@media(max-width:416px){
+  .loader{
+    width: 100%;
+    p{
+      font-size: 20px;
+    }
+    .words{
+      font-size: 20px;
+    }
+  }
+  .form_front{
+    width: 200px;
+    margin-left: 80px;
+    input{
+      width: 200px;
+    }
+  }
+}

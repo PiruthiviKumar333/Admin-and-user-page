@@ -1,5 +1,6 @@
 let data = JSON.parse(localStorage.getItem("users")) || []
 
+
 let output = document.getElementById("center")
 
 data.forEach(user => {
@@ -7,8 +8,7 @@ data.forEach(user => {
     let div = document.createElement("div")
 
     div.innerHTML = `
-
-        <div id="result">
+            <div id="result">
 
             <img src=${user.code} width="100%" height="100px">
 
@@ -18,13 +18,14 @@ data.forEach(user => {
 
             <h3>Age:<span id="age"></span>${user.age}</h3>
 
-        </div>`
+        </div>
+        `
 
-    output.appendChild(div)
-    
+        
+        output.appendChild(div)
+    })
+
+let pre = document.getElementById("pre")
+pre.addEventListener("click", () => {
+    window.location.href = "index.html"
 })
-
-// let pre = document.getElementById("pre")
-// pre.addEventListener("click", () => {
-//     window.location.href = "index.html"
-// })
