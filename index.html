@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="fullbody">
+    <div class="loader">
+      <p>ENTER YOUR</p>
+      <div class="words">
+        <span class="word">DATA</span>
+        <span class="word">INFORMATION</span>
+        <span class="word">NAME</span>
+        <span class="word">EMAIL</span>
+        <span class="word">AGE</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="round">
+        <form class="form">
+        <div class="form_front">
+          <input type="text" class="input" id="name" placeholder="Username">
+          <div class="invalid1" id="invalidname"></div>
+          <input type="email" class="input" id="email" placeholder="Email">
+          <div class="invalid2" id="invalidemail"> </div>
+          <input type="text" class="input" id="age" placeholder="Age">
+          <div class="invalid3" id="invalidage"></div>
+          <input type="file" accept="image/*" class="input" id="img">
+          <div class="invalid4" id="invalidimg"></div>
+          <button class="btn" id="submit">Submit</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
